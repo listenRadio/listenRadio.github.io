@@ -137,3 +137,20 @@ var radio = new Radio([
     howl: null
   }
 ]);
+
+function createStationDiv(index, freq,title){
+  var div = document.getElementById('stations').innerHTML;
+  div = div + `<div id ="station${index}" class="station">
+               <div class="title">
+               <div id="title${index}" class="subtitle"><b>${freq}</b> ${title} </div>
+               <div id="live${index}" class="live">LIVE</div>
+               <div id="playing${index}" class="playing">
+               <div class="rect1"></div>
+               <div class="rect2"></div>
+               <div class="rect3"></div>
+               <div class="rect4"></div>
+               <div class="rect5"></div>
+               </div></div></div>
+  `;
+  document.getElementById('stations').innerHTML=div;
+}
