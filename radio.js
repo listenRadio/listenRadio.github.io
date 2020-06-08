@@ -135,6 +135,12 @@ var radio = new Radio([
     title: "Virgin Radio Toronto",
     src: 'https://20603.live.streamtheworld.com/CKFMFMAAC_SC',
     howl: null
+  },
+  {
+    freq: '660',
+    title: "News Calgary",
+    src: 'http://rogers.leanstream.co/rogers/cal660.stream/icy',
+    howl: null
   }
 ]);
 
